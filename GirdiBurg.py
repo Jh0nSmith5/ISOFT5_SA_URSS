@@ -1,3 +1,4 @@
+#wena noshe
 import re
 
 users = {
@@ -8,6 +9,7 @@ menu_items = {
     "hamburguesa": "35.00",
     "hot dog": "25.00",
     "refresco": "20.00",
+    "agua fresca": "20.00"
 }
 
 def selector():
