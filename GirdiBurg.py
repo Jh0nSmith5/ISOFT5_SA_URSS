@@ -11,6 +11,7 @@ menu_items = {
 }
 
 def selector():
+    print("\nBienvenido a Gordiburger - ¡Tu lugar favorito para comer!\n")
     print("¿Tiene cuenta? [S/N]")
     respuesta = input().upper().strip()
     if respuesta == "S":
@@ -22,8 +23,13 @@ def selector():
         selector()
 
 def validacion_user(user):
-    while user in users:
-        print("Usuario ya existente. Por favor elige otro usuario.")
+    while user in users or not re.search(r'[A-Za-z]', user) or user.isdigit():
+        if user in users:
+            print("Usuario ya existente. Por favor elige otro usuario.")
+        elif user.isdigit():
+            print("El nombre de usuario no puede ser solo números. Debe contener letras.")
+        elif not re.search(r'[A-Za-z]', user):
+            print("El nombre de usuario debe contener al menos una letra.")
         user = input("Ingresa otro usuario: ")
     return user
 
@@ -38,7 +44,7 @@ def login():
     print("Ingresa usuario:")
     user = input()
     if user in users:
-        print("Bienvenido a Gordiburg " + user)
+        print(f'\nBienvenido a Gordiburg {user}\n')
         opciones()
     else:
         print("Usuario no encontrado.")
@@ -93,5 +99,9 @@ def menu():
             print("Opción inválida. Ingresa un número.")
     print("Gracias por tu orden. Vuelve pronto.")
     exit()
+
+print("=======================================")
+print("    ¡Bienvenido a Gordiburg! 🍔🌭🥤    ")
+print("=======================================")
 
 selector()
