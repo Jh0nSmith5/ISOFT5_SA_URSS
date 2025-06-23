@@ -37,8 +37,7 @@ import matplotlib.pyplot as plt
 
 # Relaciones entre los módulos
 relaciones = [
-    ("User", "Menu"),
-    ("User", "Product Description"),
+    ("Menu", "User" ),
     ("Menu", "Product Description")
 ]
 
