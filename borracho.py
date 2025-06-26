@@ -21,7 +21,6 @@ def llamar(nombre):
     print("Llamada rechazada")
 
 def borrachito(nombre1,nombre2,nombre3,nombre4,nombre5):
-    #while True:
         tomar(nombre1)
         time.sleep(1)
         usar_baño(nombre2)
@@ -34,14 +33,13 @@ def borrachito(nombre1,nombre2,nombre3,nombre4,nombre5):
         time.sleep(1)
         print("Fin de un ciclo...")
 
-while True:
-    borrachito("Andres", "Jhonat", "Cesar", "Brenda", "Victor")
-    time.sleep(1)
-    borrachito("Cesar", "Brenda", "Jhonat", "Victor", "Andres")
-    time.sleep(1)
-    borrachito("Brenda", "Victor", "Andres", "Jhonat", "Cesar")
-    time.sleep(1)
-    borrachito("Victor", "Andres", "Cesar", "Brenda", "Jhonat")
-    time.sleep(1)
+borrachito("Andres", "Jhonat", "Cesar", "Brenda", "Victor")
+time.sleep(1)
+borrachito("Cesar", "Brenda", "Jhonat", "Victor", "Andres")
+time.sleep(1)
+borrachito("Brenda", "Victor", "Andres", "Jhonat", "Cesar")
+time.sleep(1)
+borrachito("Victor", "Andres", "Cesar", "Brenda", "Jhonat")
+time.sleep(1)
 
 #si
