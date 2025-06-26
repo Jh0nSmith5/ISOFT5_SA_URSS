@@ -1,3 +1,5 @@
+#Weno dia
+
 import time
 
 def tomar(nombre):
