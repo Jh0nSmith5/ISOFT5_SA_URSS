@@ -41,7 +41,7 @@ borrachito("Cesar", "Brenda", "Jhonat", "Victor", "Andres")
 time.sleep(1)
 borrachito("Brenda", "Victor", "Andres", "Jhonat", "Cesar")
 time.sleep(1)
-borrachito("Victor", "Andres", "Cesar", "Brenda", "Jhonat")
+borrachito("Victor", "Andres", "Brenda", "Cesar", "Jhonat")
 time.sleep(1)
 
 #si
