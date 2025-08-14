@@ -1,6 +1,8 @@
+ #Привет
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from GirdiBurg import signup, validar_email
+from GirdiBurg import validacion_email
 
 app = FastAPI(title="Gordibug api", version="2.0")
 
@@ -21,5 +23,5 @@ def get_menu():
 
 @app.post("/registro")
 def post_registro(data: Registro):
-    if not signup(data.email):
+    if not validacion_email(data.email):
         raise HTTPException(status_code=400, detail="Correo electrónico inválido")
